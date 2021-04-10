@@ -2,7 +2,7 @@ from setuptools import setup
 
 setup(
     name='loguru-logging-intercept',
-    version='0.1.0',
+    version='0.1.1',
     description='Code to integrate Loguru with Python\'s standard logging module',
     url='https://github.com/MatthewScholefield/loguru-logging-intercept',
     author='Matthew D. Scholefield',
