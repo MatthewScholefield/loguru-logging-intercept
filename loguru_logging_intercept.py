@@ -35,4 +35,3 @@ def setup_loguru_logging_intercept(
         mod_logger = logging.getLogger(logger_name)
         mod_logger.handlers = [InterceptHandler(level=level)]
         mod_logger.propagate = False
-    logger.configure(handlers=[{"sink": sys.stderr, "level": level}])
