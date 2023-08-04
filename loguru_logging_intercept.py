@@ -20,12 +20,16 @@ class InterceptHandler(logging.Handler):
         while frame.f_code.co_filename == logging.__file__:  # noqa: WPS609
             frame = cast(FrameType, frame.f_back)
             depth += 1
-
-        logger.opt(depth=depth, exception=record.exc_info).log(
-            level,
-            "{}",
-            record.getMessage(),
-        )
+        logger_with_opts = logger.opt(depth=depth, exception=record.exc_info)
+        try:
+            logger_with_opts.log(level, "{}", record.getMessage())
+        except Exception as e:
+            safe_msg = getattr(record, 'msg', None) or str(record)
+            logger_with_opts.warning(
+                "Exception logging the following native logger message: {}, {!r}",
+                safe_msg,
+                e
+            )
 
 
 def setup_loguru_logging_intercept(
