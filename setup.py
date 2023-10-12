@@ -5,7 +5,7 @@ with open('README.md', mode='r') as f:
 
 setup(
     name='loguru-logging-intercept',
-    version='0.1.3',
+    version='0.1.4',
     description='Code to integrate Loguru with Python\'s standard logging module',
     long_description=LONG_DESC,
     long_description_content_type='text/markdown',
