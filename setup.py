@@ -1,9 +1,15 @@
 from setuptools import setup
 
+with open('README.md', mode='r') as f:
+    LONG_DESC = f.read()
+
 setup(
     name='loguru-logging-intercept',
     version='0.1.3',
     description='Code to integrate Loguru with Python\'s standard logging module',
+    long_description=LONG_DESC,
+    long_description_content_type='text/markdown',
+
     url='https://github.com/MatthewScholefield/loguru-logging-intercept',
     author='Matthew D. Scholefield',
     author_email='matthew331199@gmail.com',
