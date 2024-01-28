@@ -1,5 +1,7 @@
 # Loguru Logging Intercept
 
+[![PyPI - Version](https://img.shields.io/pypi/v/loguru-logging-intercept)](https://pypi.org/project/loguru-logging-intercept) [![PyPI - Downloads](https://img.shields.io/pypi/dm/loguru-logging-intercept)](https://pypi.org/project/loguru-logging-intercept)
+
 *Code to integrate [Loguru](https://github.com/Delgan/loguru) with Python's standard
 [logging](https://docs.python.org/3/howto/logging.html) module*
 
