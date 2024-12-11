@@ -21,7 +21,7 @@ setup(
         'Programming Language :: Python :: 3.6',
     ],
     keywords=['loguru', 'logging', 'intercept'],
-    packages=find_namespace_packages(include=['loguru_logging_intercept*']),
+    py_modules=['loguru_logging_intercept'],
     install_requires=[
         'loguru'
     ],
