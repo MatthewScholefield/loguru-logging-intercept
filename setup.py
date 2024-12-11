@@ -21,7 +21,7 @@ setup(
         'Programming Language :: Python :: 3.6',
     ],
     keywords=['loguru', 'logging', 'intercept'],
-    py_modules=['loguru_logging_intercept'],
+    packages=find_packages(),
     install_requires=[
         'loguru'
     ],
