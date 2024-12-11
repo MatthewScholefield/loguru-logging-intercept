@@ -1,4 +1,4 @@
-from setuptools import setup
+from setuptools import setup, find_packages
 
 with open('README.md', mode='r') as f:
     LONG_DESC = f.read()
