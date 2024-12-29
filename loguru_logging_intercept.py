@@ -16,8 +16,8 @@ class InterceptHandler(logging.Handler):
         except ValueError:
             level = str(record.levelno)
 
-        frame, depth = logging.currentframe(), 2
-        while frame.f_code.co_filename == logging.__file__:  # noqa: WPS609
+        frame, depth = logging.currentframe(), 1
+        while frame.f_code.co_filename in (logging.__file__, __file__):  # noqa: WPS609
             frame = cast(FrameType, frame.f_back)
             depth += 1
         logger_with_opts = logger.opt(depth=depth, exception=record.exc_info)
