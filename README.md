@@ -33,8 +33,10 @@ def main():
 
 ## Installation
 
-Install via `pip`:
+Install via `pip` or `uv`:
 
 ```bash
 pip3 install loguru-logging-intercept
+# or
+uv pip install loguru-logging-intercept
 ```
