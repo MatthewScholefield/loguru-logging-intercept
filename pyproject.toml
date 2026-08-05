@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "loguru-logging-intercept"
-version = "0.1.6"
+version = "0.1.7"
 description = "Code to integrate Loguru with Python's standard logging module"
 readme = "README.md"
 requires-python = ">=3.8"
